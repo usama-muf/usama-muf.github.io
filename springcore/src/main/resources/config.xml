@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://spring.www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+http://spring.www.springframework.org/schema/context
+http://spring.www.springframework.org/schema/context/spring-context.xsd">
+    <!--First bean-->
+    <bean name="student1" class="com.springcore.Student" p:studentId="2210" p:studentName="bhaiUsama" p:studentCity="noida"/>
+      <!-- //type 1//
+       <property name="studentId">
+            <value>123</value>
+        </property>
+
+        //type 2//
+        <property name="studentId" value="114"/>
+        <property name="studentName" value="usama"/>
+        <property name="studentCity" value="delhi"/>
+
+        //type 3//
+        p:studentId="2210" p:studentName="bhaiUsama" p:studentCity="noida"
+    -->
+
+    <!--Second bean-->
+    <bean name="student2" class="com.springcore.Student">
+        <!--  <property name="studentId">
+              <value>123</value>
+          </property>-->
+        <property name="studentId" value="100"/>
+        <property name="studentName" value="Ahemd"/>
+        <property name="studentCity" value="lko"/>
+    </bean>
+    <bean name="employee1" class="com.springcore.collections.Employee">
+        <property name="empName">
+            <value>Employee Usama</value>
+        </property>
+
+        <property name="phone">
+            <list>
+                <value>9984770000</value>
+                <value>+91 0522226009</value>
+            </list>
+        </property>
+
+        <property name="addresses">
+            <set>
+                <value>Lucknow</value>
+                <value>Delhi</value>
+                <value>Lucknow</value>
+            </set>
+        </property>
+
+        <property name="courses">
+            <map>
+                <entry key="BCA" value="3"/>
+                <entry key="MCA" value="2"/>
+            </map>
+        </property>
+    </bean>
+  </beans>
+<!--
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="student1" class="com.springcore.Student">
+        <property name="studentId">
+            <value>123</value>
+        </property>
+        <property name="studentName">
+            <value>Mohammed Usama</value>
+        </property>
+        <property name="studentCity">
+            <value>Lucknow</value>
+        </property>
+    </bean>
+
+</beans>
+-->

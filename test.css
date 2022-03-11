@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 80.5%;
+    background-color: white;
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+p {
+    padding: 20px;
+    top: 50%;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    
+}
+.split--0 {
+    top:30%;
+    left: 0;
+    background-color: red;
+}
+.split--1 {
+    right: 0;
+    top: 30%;
+    background-color: green;
+}
+/*.p1{
+
+    background-color:rgba(255, 0, 0, 0.37);
+}
+.p2 {
+    background-color: rgba(0, 255, 0, 0.37);
+}*/
+.splitBtn{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(117, 84, 35, 0.692);
+    border: 3px solid grey;
+    z-index: 10;
+}
+.active {
+
+    opacity: .3;
+    backdrop-filter: blur(8px);
+}
+
+
+.app {
+    border: 1px dashed rebeccapurple;
+    margin: 4rem;
+    position: relative;
+    display: grid;
+    max-width: 100rem;
+    max-height: 40rem;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows:auto repeat(3,15rem) auto;
+    gap: 2rem;
+}
+
+.menu_items {
+    grid-column: 1/span 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.movements {
+    display: flex;
+    border: 1px dotted red;
+}
+/*.menuitem {
+    display: flex;
+    
+}
+*/

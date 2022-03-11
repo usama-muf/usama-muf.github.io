@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+    
+}
+.container{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    background: #222;
+}
+.container .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    transition: .5s;
+    
+}
+
+.container .clip.clip1{
+clip-path: circle(23.5% at 10% 20%);
+    background: white;
+
+}
+.container .clip.clip2{
+    background: red;
+clip-path: circle(23.5% at 12% 79%);
+    background-image: url(UsamaDP.jpg);
+    background-repeat: no-repeat;
+    background-position:-10px 190px;;
+    background-size:contain;
+}
+.container .clip.clip3{
+    background:blue;
+clip-path: circle(23.5% at 44% 83%);
+    background-image: url(tiger-in-grass-field-1642070.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: -20px 90px;
+}
+.container .clip.clip4{
+    background:yellow;
+clip-path: circle(23.5% at 73% 85%);
+}
+.container .clip.clip5{
+    background:green;
+clip-path: circle(23.5% at 93% 67%);
+}
+.container .clip.clip6{
+    background: brown;
+clip-path: circle(23.5% at 87% 25%);
+
+}
+.container .clip.clip7{
+    background: grey;
+clip-path: circle(23.5% at 55% 15%);
+ 
+}
+.container .clip.clip8{
+    background: orange;
+clip-path: circle(24.9% at 19% 13%);
+    background-image: url(abc2.jpeg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: -40px -10px
+
+}
+
+/*.container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%);
+
+}*/
+
+.container .clip:hover{
+clip-path: circle(33.4% at 50% 50%);
+        background-position: 220px 0px;
+    z-index: 1;
+
+
+}
+.container .clip.clip3:hover{
+    background-position: 50px -60px;
+}
+
+
+.container .clip.clip8:hover{
+    background-position: 190px 80px;
+}

@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    padding: 20px;
+    background: linear-gradient(180deg, #a0d2eb,#e5eaf5
+
+,#d0bdf4,#8458B3,#a28089);
+}
+
+.sidenav {
+    display: none;
+    background-color: azure;
+    height: 114%;
+    width: 180px;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.sidenav a {
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px 30px 20px;
+    font-family: 'swanky-and-moo-moo';
+    font-size: 35px;
+    color: darkgoldenrod;
+
+}
+
+.hamburgerIcon{
+    font-size: 40px;
+    padding: 10px;
+    color: blue;
+    cursor: pointer;
+    
+    
+}
+
+.cancelButton {
+    text-align-last: center;
+
+}
+
+.sidenav a:hover {
+    color: grey;
+    background-color: burlywood;
+}

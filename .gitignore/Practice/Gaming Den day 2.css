@@ -1,0 +1,77 @@
+body {
+    background-image: url(images/abc3.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+
+}
+
+ul {
+    text-align: center;
+
+}
+
+h1 {
+    width: 100%;
+    color: white;
+    font-family: cursive;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 2px grey;
+}
+
+h2 {
+    font-size: 25px;
+    color: wheat;
+    text-align: center;
+    margin-top: 90px;
+    font-family: inherit;
+}
+
+table {
+    font-family: cursive;
+    color: beige;
+    border-collapse: separate;
+    width: 60%;
+    margin-top: 80px;
+    text-align: center;
+}
+
+th {
+    font-size: 20px;
+    text-align: left;
+    padding-top: 4px;
+    background-color: lightgreen;
+    padding: 8px;
+
+}
+
+td {
+    font-size: 15px;
+    text-align: left;
+    padding: 3px;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgreen;
+}
+
+tr:nth-child(even) {
+    background-color: pink;
+}
+
+.container {
+    text-align: center;
+    color: beige;
+    padding: 40px;
+}
+
+.footer {
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}

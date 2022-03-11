@@ -1,0 +1,126 @@
+.body,
+html {
+    background-color: darkseagreen;
+    background-image: url(images/making-a-budget-tracking-finances.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    -webkit-transform: (-40%, -30%);
+    transform(-50%, -50%);
+}
+
+table {
+    width: 1000px;
+    border-collapse: collapse;
+    overflow: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+}
+
+th,
+td {
+    font-size: 22px;
+    font-family: monospace;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: default;
+    padding-left: 10px
+}
+
+th {
+    text-align: left;
+    font-size: 25px;
+
+
+}
+tbody td{
+    position: relative;
+    font-family: sans-serif,serif,monospace;
+    font-size: 15px;
+}
+tbody tr:hover {
+    color: ;
+    background-color: darkseagreen;
+}
+tbody td:hover:before{
+    position:sticky;
+    content:"";
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: -7px;
+    bottom: -7px;
+    background-color: rgba(205, 129,172,.4);
+    z-index: -1;
+    
+}
+
+td:hover {
+    color: ;
+    background-color: darkseagreen;
+}
+span {
+    color: blue;
+    padding: 20px;
+}
+
+.sidenav {
+    display: none;
+    background-color: azure;
+    height: 114%;
+    width: 180px;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.sidenav a {
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px 30px 20px;
+    font-family: monospace;
+    font-size: 20px;
+    color: darkgoldenrod;
+
+
+
+
+}
+
+.closebt {
+    text-align-last: center;
+
+
+}
+
+.sidenav a:hover {
+    color: grey;
+    background-color: burlywood;
+}
+
+.jamia {
+    height: 180px;
+    width: 180px;
+    padding-top: 8px;
+
+
+}
+
+.footer {
+    padding-top: 92px;
+    text-align: center;
+    position: fixed;
+    padding-left: 30px;
+}

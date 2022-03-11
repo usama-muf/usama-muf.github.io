@@ -1,0 +1,54 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-family: serif;
+    
+}
+.box{
+    border: 3px solid #00;
+    height: 50%;
+    background: linear-gradient(45deg,#4b346b,#313566,#284c5c,#4bb885,#96ed64,#9c8b40,#ff5757,#de8e78,#b7de6f, #5de3c1,#4e61bf,#995ced);
+    background-size: 200% 200%;
+    position: inherit;
+    animation: change 10s ease-in-out infinite;
+    
+    
+}
+section{ 
+    background: linear-gradient(-45deg,#4b346b,#313566,#284c5c,#4bb885,#96ed64,#9c8b40,#ff5757,#de8e78,#b7de6f, #5de3c1,#4e61bf,#995ced);
+   
+    background-size: 600% 600%;
+    width: 100%;
+    height: 25%;
+    position:relative;
+    animation: change 10s ease-in-out infinite;
+    
+}
+h1{
+    font-family: monospace;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    position: absolute;
+    border: 3px solid #ffff;
+    left: 50%;
+    top: 182%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    padding: 3rem 5rem;
+    text-align: center;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+     50%{
+        background-position: 100% 0%;
+    }
+     100%{
+        background-position: 0 50%;
+    }
+}

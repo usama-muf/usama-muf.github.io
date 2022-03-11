@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+body,
+html {
+    padding: 20px;
+    font-family: serif;
+    background-color: rgba(143, 201, 93,.3)
+}
+
+
+.sidenav {
+
+    background-color: grey;
+
+    background-position: bottom;
+    display: none;
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    overflow-x: hidden;
+    padding-top: 10px;
+
+}
+
+span {
+    color: black;
+    padding: 0 px;
+    
+}
+
+.sidenav {
+    display: none;
+    background-color: azure;
+    height: 114%;
+    width: 180px;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.sidenav a {
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px 30px 20px;
+    font-family: monospace;
+    font-size: 20px;
+    color: darkgoldenrod;
+
+
+
+
+}
+
+.closebt {
+    text-align-last: center;
+
+
+}
+
+.sidenav a:hover {
+    color: grey;
+    background-color: burlywood;
+}
+
+.jamia {
+    height: 180px;
+    width: 180px;
+    padding-top: 8px;
+
+
+}
+
+.footer {
+    padding-top: 12px;
+    text-align: center;
+    position: fixed;
+    padding-left: 50px;
+}
+.main{
+    max-width: 1500px;
+    margin: auto;
+    
+}
+h1{
+    font-size: 40px;
+    font-family: monospace;
+    text-align: center;
+    padding: 20px 30px;
+    color: rgba(65, 153, 224,1);
+    
+}
+.row{
+    margin: 8px 10px;
+}
+.column{
+    float: left;
+    width: 50%;
+}
+.content{
+    background-color: white;
+    padding: 10px
+}
+@media screen and(max-width:900px){
+    .column{
+        width: 50%
+    }
+}
+@media screen and (max-width:600px){
+    .column{
+        width: 100%
+    }
+}
+h2{
+    font-size: 15px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+.bird{
+    padding: 40px;
+}

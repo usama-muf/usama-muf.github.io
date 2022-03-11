@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Gaming Den</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Welcome To The Gaming Den!</h1>
+    <h2>Today's Crazy Specials, Don't Miss Out!</h2>
+
+    <table align="center">
+        <tr>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Price</th>
+            <th>Platform</th>
+        </tr>
+        <tr>
+            <td>minecraft</td>
+            <td>Open World</td>
+            <td>1200 Rs</td>
+            <td>X box 1</td>
+        </tr>
+        <tr>
+            <td>Fifa</td>
+            <td>Sports</td>
+            <td>500 Rs</td>
+            <td>Play Station</td>
+        </tr>
+        <tr>
+            <td>Tomb Raider</td>
+            <td>Adventure</td>
+            <td>800 Rs</td>
+            <td>PC</td>
+        </tr>
+
+
+
+    </table>
+
+
+    <div class="container">
+        <p>Contact Us<br>
+            Phone:9988774455 <br>
+            usama.muf@yahoo.com</p>
+    </div>
+    <div class="footer">
+        <p>Copyright 2019</p>
+    </div>
+
+</body></html>

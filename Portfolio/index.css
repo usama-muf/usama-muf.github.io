@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 10px;
+  font-size: 80.5%;
+  box-sizing: border-box;
+  /*    border: 1px dashed white;
+*/
+  scroll-behavior: smooth;
+}
+body {
+  background-color: grey;
+  font-family: "Press Start 2P", sans-serif;
+}
+header {
+  position: relative;
+  height: 30vh;
+  text-align: center;
+  /*    border: 10px solid black;
+*/
+  background-image: none;
+  background-attachment: fixed;
+  background-size: cover;
+}
+p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 100;
+  color: rgba(29, 29, 163, 0.651);
+}
+
+.row-header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column-header {
+  float: left;
+  flex: 10%;
+  text-align: center;
+  background-color: aqua;
+  padding: 4px;
+  margin: 3px;
+  height: 100%;
+  width: 100%;
+}
+/*.l1 {
+    width: 10%;
+    background-color: aquamarine;
+}
+.l2 {
+    width: 10%;
+    background-color: aquamarine;
+}
+.l3 {
+    width: 10%;
+    background-color: aquamarine;
+}
+.l4 {
+    width: 10%;
+    background-color: aquamarine;
+}
+.l5 {
+    width: 10%;
+    background-color: aquamarine;
+}*/
+.row-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main {
+  margin-top: 10px;
+  /*    border: 1px solid black;
+*/
+  text-align: center;
+  padding-top: 20px;
+  transition-delay: 0.1s;
+}
+.welcome-note {
+  text-align: center;
+  font-size: 40px;
+}
+section {
+  text-align: center;
+}
+img {
+  height: 100px;
+  width: 100px;
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(-18rem);
+}
+
+.smallIcons-sec {
+  margin-top: 100px;
+}
+.smallIcons {
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: translate(-200%, 0%);
+}
+/*PARALLAX  EFFECT*/
+/*
+.section {
+    background:grey no-repeat center/cover;
+    bottom: 0;
+    position:sticky;
+
+    padding-top: 50px;
+    justify-content: center;
+    pointer-events: auto;
+display: block;
+    overflow: hidden;
+        z-index: 0;
+    align-items: center;
+
+
+}
+
+.section:nth-last-child(5) .section {
+    height: 100vh;
+    z-index: -1;
+    pointer-events: auto;
+}
+
+.section:nth-last-child(4)  {
+    height: 100vh;
+    pointer-events: auto;
+    z-index: -2;
+}
+.section:nth-last-child(3) {
+    z-index: -3;
+    pointer-events: auto;
+}
+.section:nth-last-child(2) {
+    height: 100vh;
+    z-index: -4;
+    pointer-events: auto;
+}
+.section:last-child {
+    z-index: -5;
+    height: 100vh;
+    pointer-events: auto;
+}
+.section::before {
+    content: " ";
+    position: absolute;
+}
+*/
+.title-header {
+  padding-top: 60px;
+  margin-top: 60px;
+  font-size: 30px;
+  /*border: 1px dashed yellow;*/
+  border-top: 3px solid blue;
+}
+.usama-dp {
+  height: 250px;
+  width: 250px;
+  float: left;
+  margin-left: 10px;
+  border-radius: 50%;
+  transform: translate(0, -20%);
+}
+/* adjust paragraph description according to content*/
+.about-me-desc {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/* Education and Certification part start*/
+
+.education-sec {
+  margin-top: 10px;
+  line-height: 20px;
+  height: 52vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /*    border: 1px solid black;
+*/
+}
+.edu-left,
+.edu-right,
+.certifications {
+  flex: 33.33%;
+  font-stretch: expanded;
+  padding: 20px;
+  margin: 20px;
+}
+
+/*Skills section start*/
+
+.skills-header {
+  padding-top: 100px;
+  margin-top: 100px;
+  /*    border: 1px dashed yellow;
+*/
+  position: relative;
+}
+
+.skills-sec-1 {
+  margin-top: 10px;
+  line-height: 20px;
+  display: flex;
+  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+  /*    border: 1px solid black;*/
+}
+.sec-1-icon {
+  flex: 10%;
+  /*border: 2px dotted blue;*/
+}
+
+.skills-sec-2 {
+  margin-top: 10px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid black;*/
+}
+.sec-2-icon {
+  flex: 10%;
+  /*    border: 2px dotted blue;
+*/
+}
+
+.skills-sec-3 {
+  margin-top: 10px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  /*    border: 1px solid black;
+padding-left:25%;
+    padding-right: 25%;
+*/
+}
+.sec-3-icon {
+  flex: 10%;
+  /*    border: 2px dotted blue;
+*/
+}
+
+/* Project section starts*/
+
+.project-sec {
+  margin-top: 10px;
+  height: 52vh;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*    border: 1px dashed green;
+*/
+}
+.project-sec-1 {
+  flex-direction: row;
+  flex: 50%;
+  padding: 40px;
+  margin: 30px;
+  /*    border:  2px dotted blue;*/
+}
+.project-sec-2 {
+  flex: 50%;
+  padding: 40px;
+  margin: 30px;
+  /*border:  2px dotted blue;*/
+}
+
+/* cpntact me form starts */
+
+.contact-sec {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /*    border: 1px solid black;
+*/
+}
+.form-contact-sec {
+  line-height: 20px;
+  /*    border: 1px dashed green;
+*/
+  padding-bottom: 10px;
+}
+/*
+input {
+   width: 100%; 
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-bottom: 20px;
+   transition:width 1s ease-in-out;
+   font-size: 20px;
+
+}
+input:focus {
+    border: 5px solid rgb(185, 166, 166);
+}
+.button-input {
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    cursor:pointer;
+}
+*/
+.contact-text {
+  margin-top: 20px;
+  /*    border: 2px dashed blue;
+*/
+  line-height: 30px;
+}
+.smallIcons-contact {
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+}
+footer {
+  border-top: 1px solid blue;
+  align-items: center;
+  text-align: center;
+  padding-top: 7rem;
+  font-size: 8px;
+  height: 20vh;
+}
+
+/*//////////////////////////////////////////////////////////////////**/
+/* For mobile display*/
+@media screen and (max-width: 600px) {
+  html {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 0px;
+    width: 240%;
+    box-sizing: border-box;
+    border: 5px dashed white;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: grey;
+    font-family: "Press Start 2P", sans-serif;
+    border: 5px dotted red;
+  }
+
+  header {
+    height: 15vh;
+  }
+  .welcome-note {
+    margin-top: 10rem;
+  }
+
+  .about-me-sec {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    height: 150vh;
+  }
+  .column-header {
+    flex: 10%;
+    text-align: center;
+    background-color: aqua;
+    padding-left: 6px;
+  }
+  .usama-dp {
+    height: 350px;
+    width: 350px;
+    float: none;
+    transform: translate(0%, 0%);
+  }
+
+  /* adjust paragraph description according to content*/
+  .about-me-desc {
+    font-weight: 100;
+    font-size: 10px;
+  }
+  .smallIcons {
+    width: 80px;
+    height: 80px;
+    transform: translate(0%, 0%);
+  }
+  .education-sec {
+    display: block;
+    justify-content: center;
+    height: 150vh;
+    /*    border: 1px solid black;
+    */
+  }
+  .edu-left,
+  .edu-right {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 30px;
+  }
+
+  .certifications {
+    padding-top: 10rem;
+    padding-bottom: 0vh;
+    font-size: 30px;
+  }
+
+  .skills-header {
+    border: 10px dashed yellow;
+  }
+
+  .skills-sec-1 {
+    margin-top: 10px;
+    display: block;
+  }
+  .sec-1-icon {
+    padding-top: 30px;
+    /*border: 2px dotted blue;*/
+  }
+
+  .skills-sec-2 {
+    display: block;
+    padding-top: 30px;
+    /*border: 1px solid black;*/
+  }
+
+  .skills-sec-3 {
+    display: block;
+    padding-top: 30px;
+  }
+
+  .project-sec {
+    padding-top: 30px;
+    display: block;
+    height: 100vh;
+  }
+
+  .project-sec-2 {
+    padding-top: 30px;
+  }
+
+  .contact-sec {
+    padding-top: 30px;
+    display: block;
+  }
+  .smallIcons-contact {
+    height: 90px;
+    width: 90px;
+  }
+
+  footer {
+    padding-top: 55px;
+    font-family: serif;
+    padding-bottom: 20px;
+  }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Constructor injection-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://spring.www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+http://spring.www.springframework.org/schema/context
+http://spring.www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="com.springcore.constructorInjection.Certificate" name="cer1" c:cerName="Intro to python"></bean>
+    <bean name="person1" class="com.springcore.constructorInjection.Person" >
+        <constructor-arg value="Usama"/>
+        <constructor-arg value="002"/>
+        <constructor-arg ref="cer1"/>
+        <constructor-arg >
+            <list>
+                <value>item one </value>
+                <value>item two</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>

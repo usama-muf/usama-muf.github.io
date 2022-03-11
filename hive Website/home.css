@@ -1,0 +1,419 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background:white;
+   /* overflow-x:hidden;
+    overflow:auto*/
+}
+
+
+
+/*--------FOOTER PORTION BY MOHAMMED_USAMA------------*/
+/*____________--------------START________-------------------*/
+.page_wrapper{
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    z-index:10;
+    padding: 50px;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 50px;
+    overflow-x: hidden;
+    /**/
+    
+}
+/*section{
+    position: relative;
+    width: 100%;
+    
+}
+body,html{
+    
+}
+.jamiaLogo{
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    transform:t
+  
+    position: sticky;
+    
+    border-radius: 50%;
+    border: 1px solid ;
+    box-shadow: 10px 10px ;
+    overflow: hidden;
+    
+    
+        
+}
+footer{
+    bottom: 13px;
+    position:inherit;
+}*/
+/*--------------------FOOTER----------------------*/
+footer{
+    height: 450px;
+    padding-top: 4%;
+    background-image: url(Footer.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:109% 100%;
+    position:sticky;
+    
+    /*display: flex;
+        align-items: center;
+*/
+    bottom: 0%;
+    z-index: 1;
+    overflow-y: hidden;
+}
+.footer{
+    
+    color: #c3c4c9;
+    
+    height:350px;
+    /*background-image: url(Footer.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    position: relative;
+    */
+    margin-top: 40px;
+    width:100%;
+    /*border: 3px solid green;
+*/    
+}
+
+.footer .footer_content{
+    height: 300px;
+    width: auto;
+    display: flex;
+/*    border: 3px solid red;
+*/     
+}
+
+.footer .footer_content .footer_section {
+    flex:1;
+    width: 50%;
+    padding: 10px;
+    /*flex:0 0 50%;
+        border: 3px solid black;
+*/
+}
+.footer .footer_content h3{
+    color:#ffff;
+    font-size: 30px;
+    font-family: verdana;
+    margin-top: 155px;
+    margin-left: 30px;
+    font-size: 26px;
+    position:absolute;
+}
+
+.footer .footer_content h4{
+    color: #707070;
+    font-size:20;
+    font-family: verdana;
+    margin-top: 185px;
+    margin-left: 30px;
+    position:relative;
+    z-index: 20;
+    font-weight: 100;
+}
+/*.footer .footer_content h1{
+    color: #d37622;
+    font-size: 26px;
+    font-family: verdana;
+    margin-top: 2px;
+    margin-bottom: 30px;
+    text-align:center;
+transform: translate(30%, 50%);
+
+}*/
+
+/*footer .footer_content ul{text-align: center;}
+footer .footer_content ul a{
+    color: #707070;
+    font-family: verdana;
+    font-size: 16px;
+    list-style:none;
+    display:block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    width: 100%;
+
+    
+     flex-wrap: wrap-reverse;
+            margin-left: 39%;
+
+
+
+    position: sticky;
+    
+    
+}*/
+/*
+footer .footer_content ul a:hover{
+    color: saddlebrown;
+    font-size: 18px;
+    justify-content: center;
+    font-weight: 200;
+    transition: all .2s;
+    text-shadow: 2px 10px rgba(208, 210, 214,.5);
+    position:static;
+       margin-left: 40%;
+        background: white;
+
+
+}*/
+   
+
+.footer .footer_content  img{
+    height: 140px;
+    width: 140px;
+     float: right;
+    margin-right: 60px;
+    margin-top: 150px;
+ /*float: left;
+    margin-left: 20em;
+    margin-top: -40%;
+    transform: translate(250%,-50%);
+    margin-left: 31%;
+        position: absolute;
+
+
+    */
+   
+}
+.footer .footer_content .icons {
+    font-size: 40px;
+    text-align:left;
+    margin-top: 10px;
+    margin-left: 30px;
+        /*margin-left: 16.5%;
+        background-color: black;
+        border: 1px solid red;
+        position:static;
+
+
+
+    
+*/
+    
+}
+/*.fa-discord:hover{background-color:#738ADB }
+.fa-linkedin:hover{color: #0E76a8;background-color: blue}*/
+.footer .footer_content .icons a{
+    margin-right: 10px;
+    color: black;
+    transition: .3s linear;
+}
+.footer .footer_content .icons a:hover{
+    transition: .9s linea;
+    color: white;
+    opacity: .4;
+    /*font-stretch: 20px;
+    font-size: 45px;*/
+    
+}
+
+.footer .footer_bottom{
+    
+    color: black;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    bottom: 0%;
+    left: 0px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    /*    position:inherit;
+    background: white;    margin-top: 19px;
+
+*/ 
+    
+    
+}
+
+
+/*.footer .footer_content li{
+    color: #707070;
+    font-family: verdana;
+    list-style:none;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align-last: center;
+}*/
+
+
+/*-----------------------MEDIA QUERY---------------------*/
+
+
+
+
+
+
+@media only screen and (max-width:900px){
+    
+    /*footer{
+        margin: 0;
+    height: 400px;
+    }
+   .footer{
+       margin: 0;
+       max-width: 600px;
+       
+    
+    height:auto;
+    
+    }*/
+    .footer_content{}
+/*.footer .footer_content .links{margin-top: 60%;
+    width: 100%;}*/
+
+    .footer .footer_content .about{
+    height: auto;
+    text-align: left;     
+}
+    .footer .footer_content  img{
+        margin-right: 50px;
+        margin-top: 180px;
+        
+    }
+    .footer .footer_content h4{
+        width: 200px;
+    }
+        .footer .footer_content h4{font-weight: 400;}
+    
+    .footer .footer_bottom{margin-top: 20px;}
+
+}
+
+
+
+
+@media only screen and (max-width:680px){    
+    
+    .footer .footer_content h4{
+        width: 200px;
+    color: #d37622}
+    .footer .footer_content h3{color: #707070}
+    
+    .footer .footer_content .icons{font-size: 35px;width: 300px}
+    .footer .footer_content  img{margin-right: 20px; }
+}
+
+
+
+
+@media only screen and (max-width:450px){
+    
+    footer{
+    /*max-width: 600px;*/
+        
+        background-size: 109% 100%;
+        overflow-y: hidden;
+    }
+   .footer .footer_bottom{}
+    
+    
+    .footer .footer_content .about{
+    height:100px;
+    text-align: left;  
+    margin-left:0px;
+   
+        /* margin-left:100px;*/
+    
+    
+    }
+    .footer .footer_content  img{
+
+        
+        margin-top: 104px;
+        margin-right: 10px;
+        /*
+        position:absolute;
+        margin-top: 104px;
+        margin-right: 320px;*/
+        
+        
+        
+    }
+    .footer .footer_content h4{
+        width: 200px;
+        margin-top: 130px;
+        color: black;
+        font-weight: 300;
+    }
+    .footer .footer_content h3{
+        margin-top: 90px;
+        color: #006299;
+    }
+    .footer .footer_content .icons{font-size: 35px;text-align: center;width: 180%;margin-top: 30px;
+    }
+    .footer .footer_bottom{}
+
+    
+    /*
+    .footer .footer_content .links{
+        background: white;
+        background-image: url(invertedFooter%20.png);
+        width: 100%;
+        background-position:center;
+        background-size: auto;   
+        background-repeat: no-repeat;
+        padding: 10px;
+        margin-top: 0px;
+        
+        
+        
+        transform:rotateZ(180deg);background-size: 100% 100%;
+        background-repeat: no-repeat;}*/
+    /*
+    footer .footer_content ul a{
+    color: #707070;
+    font-family: verdana;
+    font-size: 16px;
+    display: block;
+    list-style:none;
+    text-align-last: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    
+    
+    
+}*/
+/*
+footer .footer_content ul a:hover{
+    color: saddlebrown;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 200;
+    transition: all .2s;
+    background: white;
+    text-shadow: 2px 10px rgba(208, 210, 214,.5);
+}*/
+   
+/*
+.footer .footer_content{
+    height: auto;flex-direction:column;
+    flex-direction: column; 
+}
+    */
+   
+    
+}
+@media only screen and (max-width:300px){
+    
+footer{
+    background-size: 109% 100%;
+    overflow-y: hidden
+    }
+}
+
+/*--------FOOTER PORTION BY MOHAMMED_USAMA------------*/
+/*____________--------------END________-------------------*/

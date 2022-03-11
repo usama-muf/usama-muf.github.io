@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Contact_travel.css">
+        <title>Contact | Travel.co</title>
+        
+    </head>
+    <body>
+      <div id="hamburger" class="sidenav">
+         <a href="javascript:void(0)" class="closebt" onclick="closeNav()">&times;</a>
+         <a href="Aboutus_travel.html">About Us</a>
+         <a href="deals_travel.html">Deals</a>
+         <a href="Contact_travel.html">Contact Us</a>
+         <img  src="images/jamia%20logo.png" id="jamia">
+          
+      </div>
+      <span style="font-size: 40px; font-style: normal; cursor: pointer" onclick="openNav()">&#9776</span>
+      <script>
+        function openNav(){
+            document.getElementById("hamburger").style.display ="Block";
+        }
+          function closeNav(){
+            document.getElementById("hamburger").style.display="None";
+}
+          
+        
+        </script>
+        <div class="hero-text">
+            <form method="get">
+           <label for="Email">Email : </label>
+           <input type="text" name="Email" placeholder="Email address" size="50px" id="email" maxlength="100" ><br /><br />
+           <label for="Suggestioins">Suggestions/ Inquiry/ Complain :</label>
+           <input type="text" size="50px" name="Suggestion" maxlength="1000" height="20px" id="suggestion">
+           <br /><br><input type="submit" value="Submit">
+        </div>
+       
+           
+           
+       </form>
+        
+    </body>
+</html>

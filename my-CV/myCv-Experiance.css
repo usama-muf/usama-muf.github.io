@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    padding: 20px;
+    background: linear-gradient(-30deg ,#d0bdf4,#8458B3,#a28089,#a0d2eb,#e5eaf5, #a0d2eb,#e5eaf5,#d0bdf4,#8458B3,#a28089,#d0bdf4,#8458B3,#a28089);
+    
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position:relative;
+    height: 350px;
+    width: 255px;
+    top: 25%;
+    left: 0;
+    overflow:hidden;
+    padding-top: 10px;
+    position: relative;
+    border-radius: 10%;
+    
+}
+
+.sidenav a {
+    text-align: centre;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    padding: 20px;
+    font-family: 'swanky-and-moo-moo';
+    font-size: 24px;
+    color:black;
+    background-color:dimgray;
+    letter-spacing: 2px;
+   
+    transition: .3s;
+    z-index: 1;
+    
+
+}
+
+.sidenav:hover a{
+    
+    opacity: .3;
+}
+
+
+
+.sidenav a:hover {
+    color: grey;
+    background-color: burlywood;
+    transform: scale(1.5);
+    z-index: 1000;
+    opacity: 1;
+    color:red;
+    
+}
+
+.sidenav a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.5),transparent);
+    transform: skewX(35deg);
+}
+.sidenav a:hover :before{
+     
+    transition: 1s;
+    transition-delay: .5s;
+}
+
+.hamburgerIcon{
+    font-size: 40px;
+    padding: 10px;
+    color: blue;
+    cursor: pointer;
+    
+    
+}
+
+.hamburgerIcon:hover{
+    transform: scale(1.4);
+    color: rgba(242, 193, 94);
+    transition: .5s;
+    
+}
+
+
+
+.cancelButton {
+    text-align-last: center;
+
+}
+
+
+
+.text{
+    cursor:default;
+    text-align: center;
+    position:relative;
+}
+.hammer{
+    font-size: 300px;
+}
+.text p{
+font-family: 'amatic-sc';
+    font-size: 70px;
+    
+
+}

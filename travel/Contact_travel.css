@@ -1,0 +1,28 @@
+body,html{
+    background-color:darkgray;
+    background-image:url(images/hot-air-balloons-floating--landscapet.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 40px 10px 2px;
+}
+body{
+    
+}
+.hero-text{
+    padding-left: 50px;
+    
+}
+.sidenav{
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 120px;
+    z-index: 1;
+    overflow: hidden;
+    
+    
+}
+.sidenav a{
+ display: block; 
+    
+}

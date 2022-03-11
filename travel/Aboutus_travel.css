@@ -1,0 +1,80 @@
+body,html{
+    background-image:url(images/ocean-waves-crashing.jpg);
+    background-repeat: no-repeat;
+    padding: 40px;
+    background-size: 100% 100%;
+    background-color: palegreen;
+    
+}
+.hero-image{
+    background-image: url(images/sun-setting-over-ocean.jpg);
+   background-size: 100% 100%;
+    height: 100%;
+    width: 93%;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    
+}
+.hero-text{
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;   
+}
+span{
+    color: aliceblue;
+}
+.sidenav{
+    display:none;
+    background-color: azure;
+    height: 114%;
+    width: 180px;
+   
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding-top: 20px;
+    
+    
+    
+        
+}
+.sidenav a{
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px 30px 20px;
+    font-family: monospace;
+    font-size: 25px;
+    color: darkgoldenrod;
+    
+    
+    
+    
+}
+.closebt{
+    text-align-last: center;
+    
+    
+}
+.sidenav a:hover{
+    color: grey;
+    background-color: burlywood;
+}
+.jamia{
+    height: 180px;
+    width: 180px;
+    padding-top: 80px;
+    
+    
+}
+
+.footer{
+    padding-top: 92px;
+    text-align: center;
+    position:fixed;
+    padding-left: 30px;
+}

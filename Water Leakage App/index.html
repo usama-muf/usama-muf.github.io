@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewApp</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="open_page">
+      <div class="open_page_form">
+        <form class="login" method="GET">
+          <input
+            type="text"
+            placeholder="Username"
+            class="login_input login_input--user"
+          />
+
+          <input
+            type="password"
+            maxlength="5"
+            placeholder="Password"
+            class="login_input login_input--password"
+          />
+
+          <button class="login_button">Login</button>
+        </form>
+      </div>
+      <div class="open-page-register">
+        <p>To Register your complaint</p>
+        <button class="register-button">Register</button>
+        <!--<form >
+                    <input type="file" id="myfile" name="filename">
+                    <input type="submit">
+                </form>-->
+      </div>
+    </div>
+
+    <div class="main__content hidden">
+      <div class="sidebar">
+        <ul class="details">
+          <div class="title__sidebar">Complaint Form</div>
+          <form class="form" onsubmit="submitMessage(); return false;">
+            <!--
+              <div class="form__row">
+              <label class="form__label">Type</label>
+              <select name="" id="" class="form__input form__input--type">
+                <option for="" value="water">Water Leakage</option>
+                <option for="" value="garbage">Garbage Collection</option>
+              </select>
+            </div>
+            -->
+
+            <div class="form__row">
+              <label for="pname" class="form__label">Name</label>
+              <input
+                type="text"
+                name="pname"
+                id="pname"
+                value=""
+                class="form__input form__input--name"
+              />
+            </div>
+
+            <div class="form__row">
+              <label for="street" class="form__label">Street</label>
+              <input
+                type="text"
+                name="street"
+                id="street"
+                value=""
+                class="form__input form__input--street"
+              />
+            </div>
+            <div class="form__row">
+              <label for="area" class="form__label">Area</label>
+              <input
+                type="text"
+                name="area"
+                id="area"
+                value=""
+                class="form__input form__input--area"
+              />
+            </div>
+
+            <div class="form__row">
+              <label for="city" class="form__label">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                class="form__input form__input--city"
+              />
+            </div>
+
+            <div class="form__row">
+              <label for="pincode" class="form__label">PinCode</label>
+              <input
+                type="number"
+                name="pincode"
+                id="pincode"
+                class="form__input form__input--pincode"
+              />
+            </div>
+
+            <div class="form__row">
+              <label for="mobile" class="form__label">Mobile No:</label>
+              <input
+                type="number"
+                name="mobile"
+                id="mobile"
+                class="form__input form__input--name"
+              />
+            </div>
+            <!--<div class="form__row">
+              <label for="file">Add Photos</label>
+              <input type="file" id="photo" name="photo">
+            </div>
+            <input type="submit" value="submit">
+            
+            -->
+
+            <div class="form__row">
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                class="form__input form__input--submit"
+              />
+            </div>
+          </form>
+        </ul>
+      </div>
+
+      <div id="map"></div>
+    </div>
+  </body>
+</html>

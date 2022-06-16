@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<!--<html>
+<!--
+  <!DOCTYPE html>
+  <html>
   <head>
     <meta charset="utf-8" />
-    //<meta name="viewport" content="width-device-width initial-scale=1.0">
+    <meta name="viewport" content="width-device-width initial-scale=1.0">
     <title>Admin</title>
     <script>
       async function getMessages() {
@@ -49,7 +50,7 @@
             <th>pincode</th>
             <th>mobile_No</th>
           </tr>
-          <!--
+          
           <tr style="font-size: 20px">
             <td>${element.name}</td>
             <td>${element.street}</td>
@@ -57,7 +58,7 @@
             <td>${element.city}</td>
             <td>${element.pincode}</td>
             <td>${element.mobile}</td>
-          </tr>--
+          </tr>
         </table>
       </div>
     </main>
@@ -69,41 +70,29 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width-device-width initial-scale=1.0" />
+    <meta name="viewport" content="width= device-width initial-scale=1.0" />
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1135.0.min.js"></script>
     <script defer src="adminJs.js"></script>
     <link rel="stylesheet" href="adminCSS.css" />
     <title>Admin</title>
-    <script></script>
   </head>
   <body>
     <main class="admin">
-      <h1>Admin Purposes <br /><br /></h1>
-      <h1>List of Users who made a complaint</h1>
-      <div class="tableResult">
-       <!-- <table>
-          <tr>
-            <th>Name</th>
-            <th>Street</th>
-            <th>Area</th>
-            <th>City</th>
-            <th>Pincode</th>
-            <th>Mobile No</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
-          </tr>
-        </table>-->
-          <!--
-            <tr style="font-size: 20px">
-              <td>${element.name}</td>
-              <td>${element.street}</td>
-              <td>${element.area}</td>
-              <td>${element.city}</td>
-              <td>${element.pincode}</td>
-              <td>${element.mobile}</td>
-            </tr>
-          -->
-        </div>
+      <div class="form_preview">
+        <h1>Admin Purposes <br /><br /></h1>
+        <h1>List of Users who made a complaint</h1>
+
+        <div class="tableResult"></div>
       </div>
+
+      <div class="photo_preview_modal hidden" id="photosPreview_modal">
+        <button class="close_photoPreview_btn" id="close_btn_id_photoPreview">
+          &times;
+        </button>
+        <h1>Phots Available in DB</h1>
+        <div id="photosPreview"></div>
+      </div>
+      <div class="overlay hidden"></div>
     </main>
   </body>
 </html>

@@ -66,6 +66,8 @@ buttonRegister.addEventListener("click", function (event) {
 });
 //
 //Leaflet library starts
+alert("This Application will try to access your location \n Please give permission ")
+
 if (navigator.geolocation)
   navigator.geolocation.getCurrentPosition(
     function (position) {

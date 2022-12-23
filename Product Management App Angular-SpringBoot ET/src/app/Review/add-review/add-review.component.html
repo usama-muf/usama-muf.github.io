@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="register-container">
+    <div class="form-heading">Write a Review</div>
+    <div class="form-container">
+        <form class="register-form">
+
+            <div class="star-container">
+                <div class="star-container-heading">Rate us</div>
+                <ngb-rating [(rate)]="currentRate">
+                    <ng-template let-fill="fill" let-index="index">
+                        <span class="star" [class.filled]="fill === 100" [class.bad]="index < 4">&#9733;</span>
+                    </ng-template>
+                </ngb-rating>
+            </div>
+
+            <div class="mb-3 review-textarea-c" >
+                <textarea class="form-control is-invalid" id="reviewTextarea"
+                    placeholder="Please write a review." name="reviewTextarea"[(ngModel)]='review.reviewContent'></textarea>
+                 <div class="invalid-feedback" *ngIf="validateReview()">
+                    Message size should be 5-200 characters.
+                </div>
+            </div>
+
+            <!-- <div class="error">errmsg</div> -->
+            <button type="submit" class="btn btn-light btn-md btn-rounded" *ngIf="!validateReview()" (click)="addPotentialReview()">Register</button>
+
+        </form>
+    </div>
+</div>

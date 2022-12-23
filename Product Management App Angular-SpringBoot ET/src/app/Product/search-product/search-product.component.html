@@ -1,0 +1,111 @@
+<app-header></app-header>
+<div class="search-container">
+
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <input type="text" class="form-control" title="Search by Product Code" placeholder="Search by Product Code"
+                aria-label="sProductCode" [(ngModel)]="sProductCode">
+        </div>
+        <div class="col-md-4 mb-3">
+            <input type="text" class="form-control" title="Search by Product Name" placeholder="Search by Product Name"
+                aria-label="sProductName" [(ngModel)]="sProductName">
+        </div>
+        <div class="col-md-4 mb-3">
+            <input type="text" class="form-control" title="Search by Product Brand"
+                placeholder="Search by Product Brand" aria-label="sProductBrand" [(ngModel)]="sProductBrand">
+        </div>
+
+        <div class="col-12">
+            <div class="error">{{errorMsg}}</div>
+            <button type="submit" class="btn btn-sm btn-outline-primary" (click)="searchProduct()">Search</button>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="table-container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Product Code</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product Brand</th>
+                <th scope="col">Ratings & Reviews</th>
+                <!-- <th scope="col">Read Reviews</th>
+                <th scope="col">Submit a Reviews</th> -->
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <th scope="row">{{product.productCode}}</th>
+                <td>{{product.productName}}</td>
+                <td>{{product.productBrand}}</td>
+                <td>
+                    <ng-template #content let-c="close" let-d="dismiss">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-basic-title">Ratings & Reviews</h4>
+                            <button type="button" class="btn-close btn-sm" aria-label="Close"
+                                (click)="d('Cross click')"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="rating-container">
+                                {{rating}} ⭐
+                            </div>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="col-md-1">#</th>
+                                        <th scope="col">Reviews</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let review of reviews; let i=index ">
+                                        <th scope="row">{{i+1}}</th>
+                                        <td>{{review}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+                        </div> -->
+                    </ng-template>
+
+                    <button class="btn btn-sm btn-outline-primary" (click)="open(content, product.productCode)">See
+                        Ratings & Reviews</button>
+
+
+                    <!-- <div class="button-review">
+                        <button class="btn btn-sm btn-outline-dark" (click)="getReviews(product.productCode)">See Reviews</button>
+                        <div class="popup">
+                            {{rating}}
+                            <div *ngFor="let review of reviews">
+                                {{review}}
+                            </div>
+                        </div>
+                        
+                    </div> -->
+                </td>
+
+
+
+                <td>
+                    <button class="btn btn-sm btn-outline-dark" (click)="addReview(product.productCode)">Add
+                        Review</button>
+                </td>
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>

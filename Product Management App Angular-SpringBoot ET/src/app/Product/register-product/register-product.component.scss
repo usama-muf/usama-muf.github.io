@@ -1,0 +1,51 @@
+.form-container{
+    position: relative;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;  
+    margin-bottom: 50px;
+    padding-right: 50px;
+
+    .heading{
+        font-size: 20px;
+        padding-bottom: 20px;
+        
+    }
+    
+    .add-record-form{
+        padding-left: 15px;
+    }
+    .form-group{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .form-control{
+        margin-left: 10px;
+    }
+    .btn{
+        
+        position: relative;
+        left:100%;
+        transform: translate(-100%);
+        padding-right:25px;
+        padding-left: 25px;
+        box-shadow: 1px 1px 5px gray;
+    }
+    
+    input{
+        background-color: rgba($color: grey, $alpha: .2);
+    
+    }
+    
+    .error{
+        color: red;
+        font-size: 11px;
+        font-style: italic;
+        position: absolute;
+        margin-bottom: 15px;
+    }
+
+}

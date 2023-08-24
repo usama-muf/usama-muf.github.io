@@ -11,5 +11,5 @@ Screenshots
 ![image](https://github.com/usama-muf/usama-muf.github.io/assets/60036208/a5172555-1293-4e8c-ab81-69ef1ce4854f)
 ![image](https://github.com/usama-muf/usama-muf.github.io/assets/60036208/58e2a20e-a3b9-4263-91a1-bb305510070a)
 ![image](https://github.com/usama-muf/usama-muf.github.io/assets/60036208/a0f7ebb2-4dd0-4d07-a199-609bbbdbf58b)
-![Uploading image.png…]()
+![image](https://github.com/usama-muf/usama-muf.github.io/assets/60036208/fee4506b-f18a-4f06-9fad-87a5285c089f)
 
